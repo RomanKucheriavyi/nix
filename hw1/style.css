@@ -1,0 +1,116 @@
+.check-form__input:checked + .check-form__label{
+    color:red;
+}
+
+.radio-form__input:checked + .radio-form__label{
+    color:red;
+}
+
+.check-form__label, .radio-form__label{
+    user-select: none;
+}
+
+@counter-style repeating-calendar {
+    system: cyclic;
+    symbols: \1F4C5; 
+    suffix: " ";
+}
+
+.months-list{
+    list-style-type: repeating-calendar;
+}
+
+.months-list > li:nth-child(3n){
+    color:yellow;
+}
+
+.months-list > li:nth-child(5n):hover{
+    background-color: blue;
+}
+
+.months-list > li::first-letter{
+    font-size: 1.1rem;
+    color: yellow
+}
+
+.fourth-task{
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.fourth-task > div{
+    background: repeating-linear-gradient(45deg,#7fffd4 10%, #f0ffff 30%);
+}
+
+.fourth-task div a[href="https://developer.mozilla.org/en-US/"] {
+    background: purple;
+}
+
+.fourth-task div a:first-child[href="https://developer.mozilla.org/en-US/"] {
+    background: radial-gradient(at 50% 100%,red, black);
+}
+
+.fourth-task div a ~ a[href$="/CSS"]:hover {
+    border: 8px solid;
+    border-radius: 10px 30px 10px 30px;
+    border-color: darkred red red darkred;
+}
+
+.fourth-task div > a:visited ~ a:visited {
+    color: yellow
+}
+
+.fourth-task div > a:last-child::selection {
+    color:red;
+    font-weight: bold; /*https://www.w3.org/TR/css-pseudo-4/#selectordef-selection :selection працює лише з невеликою кількістю правил*/
+    background-color: green;
+}
+
+.fifth-task a {
+    color: black;
+}
+
+.red-link:hover, .red-letter:active {
+    color:red;
+}
+
+.green-link:hover, .green-letter:active {
+    color: green;
+}
+
+.blue-link:hover, .blue-letter:active {
+    color:blue;
+}
+
+.red-link::selection, .red-letter::selection {
+    background-color: red;
+}
+
+.green-link::selection, .green-letter::selection {
+    background-color: green;
+}
+
+.blue-link::selection, .blue-letter::selection {
+    background-color: blue;
+}
+
+.red-letter::first-letter {
+    color: red;
+    font-size: large;
+}
+
+.green-letter::first-letter {
+    color: green;
+    font-size: large;
+}
+
+.blue-letter::first-letter {
+    color: blue;
+    font-size: large;
+}
+
+.red-letter:active::first-letter,
+.green-letter:active::first-letter,
+.blue-letter:active::first-letter {
+    color:black;
+}
