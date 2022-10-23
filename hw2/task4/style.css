@@ -1,0 +1,88 @@
+.container {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    ". . main main"
+    ". . main main"
+    "footer footer main main";
+}
+
+.header {
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    grid-area: header;
+}
+
+.main {
+    background-image: linear-gradient(to right, #00b09b, #96c93d);
+    grid-area: main;
+}
+
+.menu {
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    grid-area: menu;
+    grid-column: 3;
+    grid-row: 2 / 5;
+    justify-self: center;
+    min-width: 10vw;
+}
+
+.image {
+    background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+    grid-area: image;
+    grid-column: 4;
+    grid-row: 2 ;
+    justify-self: center;
+    min-width: 14vw;
+}
+
+.collapse {
+    background-image: linear-gradient(to right, #870000, #190a05);
+    grid-area: collapse;
+    grid-column: 4;
+    grid-row: 4;
+    justify-self: center;
+    min-width: 14vw;
+}
+
+.footer {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    grid-area: footer;
+}
+
+.container-item {
+    border: 1px solid black;
+    min-height: 15vh;
+}
+
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    }
+
+    .menu {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        min-width: 10vw;
+    }
+    
+    .image {
+        grid-column: 4;
+        grid-row: 2 ;
+        justify-self: center;
+        min-width: 14vw;
+    }
+
+    .collapse {
+        display: none;
+    }
+}
