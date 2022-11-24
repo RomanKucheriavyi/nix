@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("./fonts/Montserrat-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("./fonts/OpenSans-Bold.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("./fonts/Montserrat-Bold.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("./fonts/OpenSans-ExtraBold.ttf") format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("./fonts/OpenSans-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-display: swap;
+  src: url("./fonts/OpenSans-SemiBold.ttf") format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Reey";
+  font-display: swap;
+  src: url("./fonts/Reey-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-padding-top: 6rem;
+}
+
+body {
+  font-family: "OpenSans";
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.home {
+  background:url("./img/bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding-top: 20vh;
+}
+
+.navbar-nav {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 17px;
+}
+
+.searchbar {
+  position: relative;
+  margin-right: 110px;
+}
+
+.form-control {
+  height: 51px;
+}
+
+.searchbar .search-icon {
+  position: absolute;
+  pointer-events: none;
+  right: 30px;
+  top: 10px;
+}
+
+.search-input:focus {
+  transform: scale(3);
+}
+
+.nav-item {
+  margin-right: 58px;
+}
+
+.meal-img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-title {
+  font-family: "Reey";
+  font-size: 91px;
+}
+
+.subtitle {
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.subtitle__button {
+  width: 218px;
+  font-size: 25px;
+  font-weight: 800;
+  color: #2e3034;
+}
+
+.subtitle__text {
+  font-size: 20.5px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.menu__title {
+  color:#222328;
+  font-family: "Reey";
+  font-size: 76px;
+}
+
+.menu__subtitle {
+  color:#2f3135;
+  font-size: 27px;
+}
+
+.meal-title {
+  color: #343434;
+  font-weight: bold;
+  font-size: 29px;
+}
+
+.meal-describe {
+  color: #343434;
+  font-size: 23px;
+}
+
+.show-more-btn {
+  font-size: 23px;
+  letter-spacing: 5px;
+  font-weight: 800;
+}
+
+.promo__title {
+  font-family: "Reey";
+  font-size: 75px;
+}
+
+.promo__text {
+  font-family: "Montserrat";
+  font-size: 17px;
+}
+
+.promo__btn {
+  font-family: "Montserrat";
+  font-size: 27px;
+  color: #27292c;
+  width: 271px;
+  height: 58px;
+}
+
+.special-offer__title{
+  font-family: "OpenSans";
+  color: #27292c;
+  font-size: 58px;
+  font-weight: bold;
+}
+
+.special-offer__rules {
+  font-family: "OpenSans";
+  color: #27292c;
+  font-size: 29px;
+}
+
+.special-offer__btn {
+  font-family: "OpenSans";
+  font-size: 29px;
+  letter-spacing: 6px;
+  font-weight: bold;
+  width: 334px;
+  height: 75px;
+}
+
+.our-story {
+  background: url("./img/bg.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.our-story__title {
+  font-family: "Reey";
+  font-size: 58px;
+  color: #f8f6f1;
+  z-index: 3;
+  position: relative;
+}
+
+.our-story__subtitle {
+  font-family: "Montserrat";
+  font-size: 25px;
+  color: #f8f6f1;
+  z-index: 3;
+  position: relative;
+}
+
+.our-story__basil {
+  position: relative;
+  bottom: 464px;
+  margin-bottom: -160px;
+  z-index: 2;
+}
+
+.our-story__pizza {
+  position: relative;
+  bottom: 616px;
+  margin-bottom: -610px;
+  z-index: 1;
+}
+
+.about-us__header {
+  font-family: "Reey";
+  font-size: 42px;
+  color: #393939;
+}
+
+.about-us__text {
+  font-family: "OpenSans";
+  font-size: 19px;
+  color: #333d42;
+}
+
+.last-words {
+  font-family: "OpenSans";
+  font-size: 25px;
+  font-weight: 600;
+  color: #3f3f3f;
+}
+
+.signature {
+  font-family: "OpenSans";
+  font-size: 21px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+.footer h3 {
+  font-family: "Montserrat";
+  font-size: 30px;
+  color: #343434;
+}
+.social-networks__text {
+  font-family: "Montserrat";
+  font-size: 24px;
+  color: #343434;
+}
+
+.footer ul {
+  padding: 0
+}
+
+.footer li a{
+  font-family: "Montserrat";
+  font-size: 24px;
+  color: #343434;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0
+}
+
