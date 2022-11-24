@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link href="style.css" rel="stylesheet">
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+	<title>Italian Food</title>
+</head>
+
+<body>
+	<header class="header">
+    <!-- nav -->
+		<div class="navbar-container">
+			<nav class="navbar navbar-expand-lg bg-dark pt-4 fixed-top">
+				<div class="container-fluid g-0">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+						aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon text-light"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarToggler">
+						<ul class="navbar-nav mb-2 ms-auto ">
+							<li class="nav-item">
+								<a class="nav-link text-light px-0" aria-current="page" href="#">HOME</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-light px-0" href="#menu">MENU</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-light px-0" href="#our-story">OUR STORY</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-light px-0" href="#contact-us">CONTACT US</a>
+							</li>
+						</ul>
+
+						<div class="form-group searchbar pb-3">
+							<input type="search" class="form-control search-input rounded-pill">
+							<img src="./img/icons/search.svg" class="search-icon" alt="search">
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	<!-- /nav -->
+	</header>
+	
+	<main>
+		<!-- banner -->
+		<section class="home my-5">
+			<div class="row d-flex justify-content-center g-0">
+				<div class="home__left-content col-lg-5 col-12">
+					<img src="./img/home/logo.png" class="logo py-3" alt="logo">
+					<h1 class="main-title py-3">Italian Food</h1>
+					<h2 class="subtitle py-3">LOREMIPSUM DOLOR</h2>
+					<button type="button" class="btn subtitle__button btn-light rounded-pill py-3"
+						onclick="window.location.href = '#our-story';">READ MORE</button>
+					<p class="subtitle__text py-3 w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+						sed do iusmod tempor incididunt ut labore et dolore magna.</p>
+				</div>
+				<div class="home__right-content col-lg-5 col-12">
+					<img src="./img/home/pasta.png" alt="plate_pasta" class="img-fluid pasta">
+				</div>
+			</div>
+		</section>
+		<!-- /banner -->
+		
+		<!-- menu -->
+		<section id="menu" class="menu my-5 pt-5">
+			<!-- title -->
+			<header class="text-center">
+				<h2 class="menu__title mb-5">Lorem Ipsum Dolor</h1>
+				<h3 class="menu__subtitle col-md-6 offset-md-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Vivamus lacinia odio vitae vestibulum vestibulum.
+				</p>
+			</header>
+			<!-- /title -->
+			<!-- carousel -->
+			<div class="row col-12 my-5 g-0">
+				<div id="carouselIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
+					<!-- carousel-el -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row justify-content-md-center">
+								<div class="col-md-3 mb-3">
+										<div class="card border-0 h-100">
+												<img class="meal-img" alt="meal-1" src="./img/menu/meal-1.png">
+												<div class="card-body">
+														<h3 class="meal-title">Lorem ipsum</h3>
+														<p class="meal-describe">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
+												</div>
+										</div>
+								</div>
+
+								<div class="col-md-3 mb-3">
+										<div class="card border-0 h-100">
+												<img class="meal-img" alt="meal-2" src="./img/menu/meal-2.png">
+												<div class="card-body">
+														<h3 class="meal-title">Lorem ipsum</h3>
+														<p class="meal-describe">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
+												</div>
+										</div>
+								</div>
+
+								<div class="col-md-3 mb-3">
+										<div class="card border-0 h-100">
+												<img class="meal-img" alt="meal-3" src="./img/menu/meal-3.png">
+												<div class="card-body">
+														<h3 class="meal-title">Lorem ipsum</h3>
+														<p class="meal-describe">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
+												</div>
+										</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="row justify-content-md-center">
+								<div class="col-md-3 mb-3">
+										<div class="card border-0 h-100">
+												<img class="meal-img" alt="meal-4" src="./img/menu/meal-4.png">
+												<div class="card-body">
+														<h3 class="meal-title">Lorem ipsum</h3>
+														<p class="meal-describe">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
+												</div>
+										</div>
+								</div>
+
+								<div class="col-md-3 mb-3">
+										<div class="card border-0 h-100">
+												<img class="meal-img" alt="meal-5" src="./img/menu/meal-5.png">
+												<div class="card-body">
+														<h3 class="meal-title">Lorem ipsum</h3>
+														<p class="meal-describe">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
+												</div>
+										</div>
+								</div>
+
+								<div class="col-md-3 mb-3">
+										<div class="card border-0 h-100">
+												<img class="meal-img" alt="meal-6" src="./img/menu/meal-6.png">
+												<div class="card-body">
+														<h3 class="meal-title">Lorem ipsum</h3>
+														<p class="meal-describe">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
+												</div>
+										</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="row justify-content-md-center">
+								<div class="col-md-3 mb-3">
+										<div class="card border-0 h-100">
+												<img class="meal-img" alt="meal-7" src="./img/menu/meal-7.png">
+												<div class="card-body">
+														<h3 class="meal-title">Lorem ipsum</h3>
+														<p class="meal-describe">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
+												</div>
+										</div>
+								</div>
+
+								<div class="col-md-3 mb-3">
+										<div class="card border-0 h-100">
+												<img class="meal-img" alt="meal-8" src="./img/menu/meal-8.png">
+												<div class="card-body">
+														<h3 class="meal-title">Lorem ipsum</h3>
+														<p class="meal-describe">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
+												</div>
+										</div>
+								</div>
+
+								<div class="col-md-3 mb-3">
+										<div class="card border-0 h-100">
+												<img class="meal-img" alt="meal-9" src="./img/menu/meal-9.png">
+												<div class="card-body">
+														<h3 class="meal-title">Lorem ipsum</h3>
+														<p class="meal-describe">Lorem ipsum dolor sit amet, consectetur  adipisicing...</p>
+												</div>
+										</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- /carousel-el -->
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" 
+							class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<button class="carousel-control-prev" type="button" 
+						data-bs-target="#carouselIndicators" data-bs-slide="prev"></button>
+
+					<button class="carousel-control-next" type="button" 
+						data-bs-target="#carouselIndicators" data-bs-slide="next"></button>
+
+				</div>
+			</div>
+			<!-- /carousel -->
+			<div class="d-grid gap-2 col-6 col-md-4 col-lg-3 mx-auto">
+				<button class="show-more-btn btn btn-dark rounded-pill">SHOW MORE</button>
+			</div>
+		</section>
+		<!--/menu -->
+	
+		<!-- promo about-->
+		<section class="promo bg-dark">
+			<div class="container pb-4">
+				<header class="text-center py-5">
+					<h2 class="promo__title pt-5 pb-4 text-white">Lorem Ipsum Dolor</h2>
+				</header>
+				
+				<div class="promo__text row">
+					<div class="col-lg-6 col-12">
+						<p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+							do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex quia voluptas sit aspernatur</p>
+					</div>
+					<div class="col-lg-6 col-12">
+						<p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+							do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip.</p>
+					</div>
+				</div>
+	
+				<div class="text-center my-3">
+					<button type="button" class="promo__btn btn btn-light rounded-pill"><b>MORE INFO</b></button>
+				</div>
+			</div>
+		</section>
+		<!-- /promo about-->
+	
+		<!-- special-offer -->
+		<section class="special-offer">
+			<div class="container">
+				<div class="row mt-5">
+					<div class="col-lg-6">
+						<img src="./img/spec-offer/meal-3.png" class="img-fluid" alt="meal-3">
+					</div>
+
+					<div class="col-lg-6">
+						<h3 class="special-offer__title pt-5 ">Discount up to 50% All Excursions</h3>
+						<p class="special-offer__rules pt-3 ">  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+							sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<div class="text-left pt-4">
+							<button type="button" class="special-offer__btn btn btn-dark rounded-pill"><b>READ MORE</b></button>
+						</div>
+					</div>
+				</div>
+	
+				<div class="row flex-column-reverse flex-lg-row mt-5">
+					<div class="col-lg-6">
+						<h3 class="special-offer__title pt-5">January’s Promo: <br> Buy 1 Get 1 Free!</h3>
+						<p class="special-offer__rules pt-4"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+							sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<div class="text-left pt-4">
+							<button type="button" class="special-offer__btn btn btn-dark rounded-pill"><b>READ MORE</b></button>
+						</div>
+					</div>
+	
+					<div class="col-lg-6">
+						<img src="./img/spec-offer/meal-2.png" class="img-fluid" alt="meal-2">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /special-offer -->
+	
+		<!-- our-story header -->
+		<section id="our-story" class="our-story mt-5">
+			<header class="text-center pt-5">
+				<h2 class="our-story__title py-5">Lorem Ipsum Dolor Sit Amer</h2>
+				<h3 class="our-story__subtitle m-auto w-50 pt-2">Lorem ipsum dolor sit amet, consectetur 
+					adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore </h3>
+			</header>
+
+			<div class="d-flex justify-content-center">
+				<img src="./img/our-story/basil.png" alt="basil-leaves" class="our-story__basil img-fluid">
+			</div>
+			
+		</section>
+		<!-- /our-story header -->
+	
+		<!-- about-us -->
+		<section class="about-us">
+			<div class="d-flex justify-content-center">
+				<img src="./img/our-story/pacman.png" alt="pizza" class="our-story__pizza img-fluid">
+			</div>
+			<div class="row d-flex justify-content-center mt-3 text-center g-0">
+				<div class="col-lg-3 col-12">
+					<h3 class="about-us__header py-5">Lorem Ipsum</h3>
+					<p class="about-us__text">Lorem ipsum dolor sit amet, consecte
+						sectetur adipisicing elit, tation omne 
+						ullamco laboris nisi ut aliqolore.</p>
+				</div>
+
+				<div class="col-lg-3 col-12">
+					<h3 class="about-us__header py-5">Lorem Ipsum</h3>
+					<p class="about-us__text">Lorem ipsum dolor sit amet, consecte
+						sectetur adipisicing elit, tation omne 
+						ullamco laboris nisi ut aliqolore.</p>
+				</div>
+
+				<div class="col-lg-3 col-12">
+					<h3 class="about-us__header py-5">Lorem Ipsum</h3>
+					<p class="about-us__text">Lorem ipsum dolor sit amet, consecte
+						sectetur adipisicing elit, tation omne 
+						ullamco laboris nisi ut aliqolore.</p>
+				</div>
+
+			</div>
+	
+			<div class="col-md-6 offset-md-3 text-center my-5">
+				<p class="last-words">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+					labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+				</p>
+				<span class="signature">Lorem Ipsum</span>
+			</div>
+		</section>
+		<!-- /about-us --> 
+	
+		<!-- contact-us --> 
+		<section id="contact-us" class="contact-us bg-dark">
+			<div class="container-xl">
+				<div class="row">
+					<div class="col-md-8 mx-auto my-5">
+						<h2 class="text-center">Contact Us</h2>
+						<form class="contact-form">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="inputFirstName">First Name</label>
+										<input type="text" class="form-control" id="inputFirstName" 
+											pattern="[A-Za-z]{2,15}" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="inputLastName">Last Name</label>
+										<input type="text" class="form-control" id="inputLastName" 
+											pattern="[A-Za-z]{2,20}" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="inputEmail">Email Address</label>
+										<input type="email" class="form-control" id="inputEmail" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="inputPhone">Phone Number</label>
+										<input type="tel" class="form-control" id="inputPhone" placeholder="380xxxxxxxxx" 
+											pattern="[0-9]{12}" required>
+									</div>
+								</div>
+							</div>            
+
+							<div class="form-group">
+								<label for="inputMessage">Message</label>
+								<textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+							</div>
+							<input type="submit" class="btn btn-primary my-4 btn-lg" value="Submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /contact-us --> 
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<h3 class="social-networks__title">Title Here</h3>
+					<p class="social-networks__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, 
+						id maximus ex. Etiam nec dignissim elit, at dignissim enim. 
+					</p>
+					<div class="row">
+						<div class="d-flex">
+							<div class="p-2">
+								<img src="./img/icons/instagram.png" class="instagram-icon" alt="instagram">
+							</div>
+
+							<div class="p-2">
+								<img src="./img/icons/facebook.png" class="facebook-icon" alt="facebook">
+							</div>
+
+							<div class="p-2">
+								<img src="./img/icons/twitter.png" class="twitter-icon" alt="twitter">
+							</div>
+
+							<div class="p-2 ">
+								<img src="./img/icons/whatsapp.png" class="whatsapp-icon" alt="whatsapp">
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-12">
+					<h3 class="about-links">About</h3>
+					<ul>
+						<li><a href="">History</a></li>
+						<li><a href="">Our Team</a></li>
+						<li><a href="">Brand Guidelines</a></li>
+						<li><a href="">Terms & Condition</a></li>
+						<li><a href="">Privacy</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-2 col-12 ps-3">
+					<h3 class="services-links">Services</h3>
+					<ul>
+						<li><a href="">How to Order</a></li>
+						<li><a href="">Our Product</a></li>
+						<li><a href="">Order Status</a></li>
+						<li><a href="">Promo</a></li>
+						<li><a href="">Payment Method</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-2 col-12 ps-3">
+					<h3 class="other-links">Other</h3>
+					<ul>
+						<li><a href="#contact-us">Contact Us</a></li>
+						<li><a href="">Help</a></li>
+						<li><a href="">Privacy</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
