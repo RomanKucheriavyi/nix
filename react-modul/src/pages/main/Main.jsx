@@ -13,11 +13,13 @@ export default function Main() {
         results,
     } = useContext(GameContext);
     return (
-        <div className={style.main}>
+        <div className={style.container}>
+            <div className={style.main}>
                 <PageHeadline label={"Доступні ігри"} />
                 <GameCards gamesList={GAMES} />
                 <InfoPanel input="Мета гри - подвоїти початковий депозит, граючи в ігри" />
-            <ResultsPanel arr={results}/>
+            </div>
+        <ResultsPanel arr={results}/>
         </div>
     );
 };
