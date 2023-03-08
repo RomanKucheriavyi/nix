@@ -19,7 +19,7 @@ export default function Main() {
                 <GameCards gamesList={GAMES} />
                 <InfoPanel input="Мета гри - подвоїти початковий депозит, граючи в ігри" />
             </div>
-        <ResultsPanel arr={results}/>
+            <ResultsPanel arr={results} />
         </div>
     );
 };

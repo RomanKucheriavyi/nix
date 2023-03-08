@@ -13,9 +13,9 @@ export default function End() {
         `Вітаємо ${name}, ви змогли подвоїти ваш депозит з ${deposit}$ до ${balance}$` : 
         `${name}, ви не змогли подвоїти ваш депозиз з ${deposit}$, можливо наступного разу пощастить`;
     return (
-        <>
+        <div className={style.end}>
             <InfoPanel input={label}/>
             <Restart />
-        </>
+        </div>
     )
 };
