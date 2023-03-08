@@ -21,15 +21,15 @@ export default function FlipCoinGame() {
 
         if (side === "eagle") {
             (diff - balance > 0) ?
-                setCoinFlipResult([...coinFlipResult, { Орел: +`+${+(diff - balance).toFixed(2)}` }])
+                setCoinFlipResult([...coinFlipResult, { Орел: `+${(diff - balance).toFixed(2)}` }])
                 :
-                setCoinFlipResult([...coinFlipResult, { Орел: +`${+(diff - balance).toFixed(2)}` }])
+                setCoinFlipResult([...coinFlipResult, { Орел: `${(diff - balance).toFixed(2)}` }])
         }
         else if (side === "tail") {
             (diff - balance > 0) ?
-                setCoinFlipResult([...coinFlipResult, { Решка: `+${+(diff - balance).toFixed(2)}` }])
+                setCoinFlipResult([...coinFlipResult, { Решка: `+${(diff - balance).toFixed(2)}` }])
                 :
-                setCoinFlipResult([...coinFlipResult, { Решка: `${+(diff - balance).toFixed(2)}` }])
+                setCoinFlipResult([...coinFlipResult, { Решка: `${(diff - balance).toFixed(2)}` }])
         }
     };
 

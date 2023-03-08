@@ -25,14 +25,14 @@ export default function GuessNumGame() {
             dispatch(updateBalance(diff));
             setNumResult([
                 ...numResult,
-                { [num]: `+${+((deposite / 100) * 5).toFixed(2)}` },
+                { [num]: `+${((deposite / 100) * 5).toFixed(2)}` },
             ]);
         } else {
             const diff = +(balance - (deposite / 100) * 5).toFixed(2);
             dispatch(updateBalance(diff));
             setNumResult([
                 ...numResult,
-                { [num]: `-${+((deposite / 100) * 5).toFixed(2)}` },
+                { [num]: `-${((deposite / 100) * 5).toFixed(2)}` },
             ]);
         }
     };
