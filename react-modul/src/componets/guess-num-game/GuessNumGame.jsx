@@ -21,11 +21,11 @@ export default function GuessNumGame() {
             return;
         };
         if (getRandomInt(1, 10) === +num) {
-            const diff = +(balance + (deposite / 100) * 5).toFixed(2);
+            const diff = +(balance + ((deposite / 100) * 5)*10).toFixed(2);
             dispatch(updateBalance(diff));
             setNumResult([
                 ...numResult,
-                { [num]: `+${((deposite / 100) * 5).toFixed(2)}` },
+                { [num]: `+${(((deposite / 100) * 5)*10).toFixed(2)}` },
             ]);
         } else {
             const diff = +(balance - (deposite / 100) * 5).toFixed(2);

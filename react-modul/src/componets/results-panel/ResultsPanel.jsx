@@ -1,8 +1,10 @@
 import shortid from 'shortid';
 
+import style from "./ResultsPanel.module.scss";
+
 export default function ResultsPanel({ arr }) {
     return (
-        <aside>
+        <aside className={style.aside}>
             <h2>Результати</h2>
             <ul>
                 {arr.map(el => (
