@@ -1,5 +1,7 @@
-import style from "./SidePanel.module.scss";
 import shortid from "shortid";
+
+import style from "./SidePanel.module.scss";
+
 export default function SidePanel({ arr }) {
     return (
         <aside className={style.aside}>
@@ -14,5 +16,5 @@ export default function SidePanel({ arr }) {
                 ))}
             </ul>
         </aside>
-    );
-}
+    )
+};

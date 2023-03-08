@@ -23,6 +23,6 @@ export default function GameCards({ gamesList }) {
     });
     
     return (
-        <ul>{elements}</ul>
+        <ul className={style.ul}>{elements}</ul>
     )
 };
