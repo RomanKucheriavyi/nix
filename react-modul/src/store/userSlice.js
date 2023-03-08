@@ -15,9 +15,9 @@ export const userSlice = createSlice({
         updateBalance: (state, action) => {
             return {
                 ...state, balance: action.payload,
-            };
-        },
-    },
+            }
+        }
+    }
 });
 
 export const { createUser, deleteUser, updateBalance } = userSlice.actions;

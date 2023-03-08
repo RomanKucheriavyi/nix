@@ -1,11 +1,10 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "../../pages/login";
 import Main from "../../pages/main";
 import CoinFlip from "../../pages/coin-flip";
 import GuessDoor from "../../pages/guess-door";
 import GuessNum from "../../pages/guess-num";
 import End from "../../pages/end";
-import NoPage from "../../pages/no-page/NoPage";
 import AuthRoute from "../../helpers/AuthRoute";
 import { useSelector } from "react-redux";
 import { getDeposit, getBalance, getName } from "../../store/userSlice";
@@ -38,7 +37,7 @@ export default function App() {
         <Route path="/guess-num" element={<GuessNum />} />
         <Route path="/end" element={<End />} />
       </Route>
-      <Route path="*" element={<NoPage />} />
+      <Route path="*" element={<Navigate to="/" />}/>
     </Routes>
   )
 };

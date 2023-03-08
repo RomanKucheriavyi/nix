@@ -35,14 +35,14 @@ export default function DoorGame() {
   };
 
   return (
-    <ul className={style.ul}>
-      <li onClick={handleClick} className={style.li}>
+    <ul className={style.doors}>
+      <li onClick={handleClick} className={style.door}>
         1
       </li>
-      <li onClick={handleClick} className={style.li}>
+      <li onClick={handleClick} className={style.door}>
         2
       </li>
-      <li onClick={handleClick} className={style.li}>
+      <li onClick={handleClick} className={style.door}>
         3
       </li>
     </ul>
